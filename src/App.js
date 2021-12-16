@@ -5,20 +5,21 @@ import PlantFilter from "./PlantFilter";
 import PlantContainer from "./PlantContainer";
 import NewPlantForm from "./NewPlantForm";
 import FavoritePlants from "./FavoritePlants";
-import house_plants from "../db.json";
+
 
 
 //bloomscape.com
 
-const API = "http://localhost3001/house_plants"
+const API = "http://localhost:3000/house_plants"
 
 function App() {
 
-  const [plants, setPlants] = useState([{house_plants}])
+  const [plants, setPlants] = useState([])
+  const [filteredPlants, setFilteredPlants] = useState(plants)
   const handelChange = e => {
     const selectedGenre = e.target.value
-    const filteredPlants = house_plants.filter(plant => plant.name === selectedGenre)
-    setPlants(filteredPlants)
+    const filteredPlants = plants.filter(plant => plant.name === selectedGenre)
+    setFilteredPlants(filteredPlants)
   }
   //for the form:
   const handelSubmit = e => {
@@ -32,6 +33,7 @@ function App() {
       const response = await fetch(API)
       const plants = await response.json()
       setPlants(plants)
+      setFilteredPlants(plants)
     }
     fetchData()
   }, [])
@@ -41,10 +43,10 @@ function App() {
     <div className="App">
       <Navbar />
       <p> Home page!</p>
-      <PlantFilter fileredPlants={filteredPlants} handelChange={handelChange}/>
-      <PlantContainer plantsList= {plants}/>
-      <NewPlantForm handelSubmit={handelSubmit}/>
-      <FavoritePlants />
+      <PlantFilter  handelChange={handelChange}/>
+      <PlantContainer plantsList= {plants} fileredPlants={filteredPlants}/>
+      {/*<NewPlantForm handelSubmit={handelSubmit}/>
+      <FavoritePlants /> */}
     </div>
   );
 }

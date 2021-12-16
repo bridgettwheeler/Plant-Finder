@@ -2,7 +2,7 @@
 function NewPlantForm() {
 
     return(
-        <form style={{display:flex, flexDirection:"column"}}>
+        <form style={{display:"flex", flexDirection:"column"}}>
             <label>Name</label>
             <input type="text"/>
             <label>Size</label>

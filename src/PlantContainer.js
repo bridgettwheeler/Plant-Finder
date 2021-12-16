@@ -1,10 +1,10 @@
 import PlantCard from "./PlantCard";
 
-function PlantContainer({plants}) {
+function PlantContainer({filteredPlants}) {
 
     return (
         <div>
-            {plants.map(plant => <PlantCard />)}
+            {filteredPlants.map(plant => <PlantCard key={plant.id} plant={plant}/>)}
         </div>
         
     )

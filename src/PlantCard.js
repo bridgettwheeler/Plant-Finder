@@ -3,7 +3,7 @@ function PlantCard({plant:{image,name,size,sun,difficulty}}) {
 
     return(
         <div style={{border:"solid", width:"300px"}}>
-            <img alt="plant pic" style={{width:}}>{image}</img>
+            <img alt="plant pic" src={image} style={{width:"200px"}}/>
             <h3>{name}</h3>
             <p>{size}</p>
             <p>{sun}</p>
