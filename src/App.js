@@ -44,7 +44,7 @@ function App() {
       <Navbar />
       <p> Home page!</p>
       <PlantFilter  handelChange={handelChange}/>
-      <PlantContainer plantsList= {plants} fileredPlants={filteredPlants}/>
+      <PlantContainer plantsList= {plants} filteredPlants={filteredPlants}/>
       {/*<NewPlantForm handelSubmit={handelSubmit}/>
       <FavoritePlants /> */}
     </div>

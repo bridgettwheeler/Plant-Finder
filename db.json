@@ -5,7 +5,7 @@
             "size": "Large",
             "sun": "Low",
             "difficulty": "Carefree",
-            "image": " ",
+            "image": "/plantPics/money-tree.jpg",
             "liked": false,
             "id": "1"
         },
@@ -15,7 +15,7 @@
             "size": "Small",
             "sun": "Low",
             "difficulty": "Carefree ",
-            "image": " ",
+            "image": "/plantPics/bromeliad-summer.jpg",
             "liked": false,
             "id": "2"
         },
@@ -25,7 +25,7 @@
             "size": "Medium",
             "sun": "Low",
             "difficulty": "Carefree",
-            "image": " ",
+            "image": "/plantPics/prickly-pear-cactu.jpg",
             "liked": false,
             "id": "3"
         },
@@ -35,7 +35,7 @@
             "size": "Small",
             "sun": "Direct",
             "difficulty": "Little Effort",
-            "image": " ",
+            "image": "/plantPics/lemon-cypress.jpg",
             "liked": false,
             "id": "4"
         },
@@ -45,7 +45,7 @@
             "size": "Large",
             "sun": "Partial",
             "difficulty": "Carefree",
-            "image": " ",
+            "image": "/plantPics/sansevieria.jpg",
             "liked": false,
             "id": "5"
         },
@@ -55,7 +55,7 @@
             "size": "Medium",
             "sun": "Direct",
             "difficulty": "Carefree ",
-            "image": " ",
+            "image": "/plantPics/bromeliad-pineapple.jpg",
             "liked": false,
             "id": "6"
         },
@@ -65,7 +65,7 @@
             "size": "Medium",
             "sun": "Partial",
             "difficulty": "Little Effort",
-            "image": " ",
+            "image": "/plantPics/ficus-little-fiddle.jpg",
             "liked": false,
             "id": "7"
         },
@@ -75,7 +75,7 @@
             "size": "Medium",
             "sun": "Direct",
             "difficulty": "Little Effort",
-            "image": " ",
+            "image": "/plantPics/tabletop-norfolk-pine.webp",
             "liked": false,
             "id": "8"
         },
@@ -85,7 +85,7 @@
             "size": "Large",
             "sun": "Partial",
             "difficulty": "Carefree",
-            "image": " ",
+            "image": "/plantPics/monstera.webp",
             "liked": false,
             "id": "9"
         },
@@ -95,7 +95,7 @@
             "size": "Medium",
             "sun": "Partial",
             "difficulty": "Little Effort",
-            "image": " ",
+            "image": "/plantPics/ficus-umbellata.jpg",
             "liked": false,
             "id": "10"
         }
