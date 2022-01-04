@@ -13,6 +13,7 @@ function NewPlantForm() {
             <input type="text"/>
             <label>Image</label>
             <input type="file"/>
+            <input type="submit"/>
         </form>
     )
 }

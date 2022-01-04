@@ -8,7 +8,7 @@ function PlantCard({plant:{image,name,size,sun,difficulty}}) {
             <p>Size: {size}</p>
             <p>Sun Exposure: {sun}</p>
             <p>Difficulty Level: {difficulty}</p>
-            <p>&#9825;</p>
+            <p id="heart">&#9825;</p>
         </div>
 
     )

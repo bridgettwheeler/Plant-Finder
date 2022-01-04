@@ -5,6 +5,7 @@ import PlantFilter from "./PlantFilter";
 import PlantContainer from "./PlantContainer";
 import NewPlantForm from "./NewPlantForm";
 import FavoritePlants from "./FavoritePlants";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
@@ -17,8 +18,8 @@ function App() {
   const [plants, setPlants] = useState([])
   const [filteredPlants, setFilteredPlants] = useState(plants)
   const handelChange = e => {
-    const selectedGenre = e.target.value
-    const filteredPlants = plants.filter(plant => plant.name === selectedGenre)
+    const selectedPlant = e.target.value
+    const filteredPlants = plants.filter(plant => selectedPlant === "All" || plant.name === selectedPlant)
     setFilteredPlants(filteredPlants)
   }
   //for the form:
@@ -41,12 +42,23 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <p> Home page!</p>
-      <PlantFilter  handelChange={handelChange}/>
-      <PlantContainer plantsList= {plants} filteredPlants={filteredPlants}/>
-      {/*<NewPlantForm handelSubmit={handelSubmit}/>
-      <FavoritePlants /> */}
+      
+      <Router>
+        <Navbar />
+          <Switch>
+          <Route path="/plants/new">
+            <NewPlantForm />
+          </Route>
+          <Route path="/plants/favorites">
+            <FavoritePlants />
+          </Route>
+          <Route path="/">
+            <p> Home page!</p>
+            <PlantFilter  handelChange={handelChange}/>
+            <PlantContainer plantsList= {plants} filteredPlants={filteredPlants}/>
+          </Route>
+          </Switch>
+      </Router>
     </div>
   );
 }
