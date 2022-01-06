@@ -8,7 +8,7 @@ import FavoritePlants from "./FavoritePlants";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
-
+// question - I feel like my handleLike should be in App but when I put it there is says it is undefined. I try to add it to the plant container component but it doesnt work?
 //bloomscape.com
 
 const API = "http://localhost:3000/house_plants"
@@ -17,15 +17,20 @@ function App() {
 
   const [plants, setPlants] = useState([])
   const [filteredPlants, setFilteredPlants] = useState(plants)
+  //const [likedPlants, setLikedPlants] = useState(plants)
+
   const handelChange = e => {
     const selectedPlant = e.target.value
     const filteredPlants = plants.filter(plant => selectedPlant === "All" || plant.name === selectedPlant)
     setFilteredPlants(filteredPlants)
   }
+
+  
+
   //for the form:
   const handelSubmit = e => {
     e.preventDefault()
-    // PATCH?
+    // PUT?
   }
   
 
