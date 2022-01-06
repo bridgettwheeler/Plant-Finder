@@ -1,104 +1,94 @@
 {
-    "house_plants": [
-        {
-            "name": "Money Tree",
-            "size": "Large",
-            "sun": "Low",
-            "difficulty": "Carefree",
-            "image": "/plantPics/money-tree.jpg",
-            "liked": false,
-            "id": "1"
-        },
-
-        {
-            "name": "Bromeliad Summer",
-            "size": "Small",
-            "sun": "Low",
-            "difficulty": "Carefree ",
-            "image": "/plantPics/bromeliad-summer.jpg",
-            "liked": false,
-            "id": "2"
-        },
-
-        {
-            "name": "Prickly Pear Cactus",
-            "size": "Medium",
-            "sun": "Low",
-            "difficulty": "Carefree",
-            "image": "/plantPics/prickly-pear-cactu.jpg",
-            "liked": false,
-            "id": "3"
-        },
-
-        {
-            "name": "Mini Lemon Cypress",
-            "size": "Small",
-            "sun": "Direct",
-            "difficulty": "Little Effort",
-            "image": "/plantPics/lemon-cypress.jpg",
-            "liked": false,
-            "id": "4"
-        },
-
-        {
-            "name": "Sansevieria",
-            "size": "Large",
-            "sun": "Partial",
-            "difficulty": "Carefree",
-            "image": "/plantPics/sansevieria.jpg",
-            "liked": false,
-            "id": "5"
-        },
-
-        {
-            "name": "Bromeliad Pineapple",
-            "size": "Medium",
-            "sun": "Direct",
-            "difficulty": "Carefree ",
-            "image": "/plantPics/bromeliad-pineapple.jpg",
-            "liked": false,
-            "id": "6"
-        },
-
-        {
-            "name": "Little Fiddle Leaf Fig",
-            "size": "Medium",
-            "sun": "Partial",
-            "difficulty": "Little Effort",
-            "image": "/plantPics/ficus-little-fiddle.jpg",
-            "liked": false,
-            "id": "7"
-        },
-
-        {
-            "name": "Tabletop Norfolk Pine",
-            "size": "Medium",
-            "sun": "Direct",
-            "difficulty": "Little Effort",
-            "image": "/plantPics/tabletop-norfolk-pine.webp",
-            "liked": false,
-            "id": "8"
-        },
-
-        {
-            "name": "Monstera",
-            "size": "Large",
-            "sun": "Partial",
-            "difficulty": "Carefree",
-            "image": "/plantPics/monstera.webp",
-            "liked": false,
-            "id": "9"
-        },
-
-        {
-            "name": "Ficus Umbellata",
-            "size": "Medium",
-            "sun": "Partial",
-            "difficulty": "Little Effort",
-            "image": "/plantPics/ficus-umbellata.jpg",
-            "liked": false,
-            "id": "10"
-        }
-
-    ]
+  "house_plants": [
+    {
+      "name": "Money Tree",
+      "size": "Large",
+      "sun": "Low",
+      "difficulty": "Carefree",
+      "image": "/plantPics/money-tree.jpg",
+      "liked": true,
+      "id": "1"
+    },
+    {
+      "name": "Bromeliad Summer",
+      "size": "Small",
+      "sun": "Low",
+      "difficulty": "Carefree ",
+      "image": "/plantPics/bromeliad-summer.jpg",
+      "liked": true,
+      "id": "2"
+    },
+    {
+      "name": "Prickly Pear Cactus",
+      "size": "Medium",
+      "sun": "Low",
+      "difficulty": "Carefree",
+      "image": "/plantPics/prickly-pear-cactu.jpg",
+      "liked": true,
+      "id": "3"
+    },
+    {
+      "name": "Mini Lemon Cypress",
+      "size": "Small",
+      "sun": "Direct",
+      "difficulty": "Little Effort",
+      "image": "/plantPics/lemon-cypress.jpg",
+      "liked": true,
+      "id": "4"
+    },
+    {
+      "name": "Sansevieria",
+      "size": "Large",
+      "sun": "Partial",
+      "difficulty": "Carefree",
+      "image": "/plantPics/sansevieria.jpg",
+      "liked": false,
+      "id": "5"
+    },
+    {
+      "name": "Bromeliad Pineapple",
+      "size": "Medium",
+      "sun": "Direct",
+      "difficulty": "Carefree ",
+      "image": "/plantPics/bromeliad-pineapple.jpg",
+      "liked": false,
+      "id": "6"
+    },
+    {
+      "name": "Little Fiddle Leaf Fig",
+      "size": "Medium",
+      "sun": "Partial",
+      "difficulty": "Little Effort",
+      "image": "/plantPics/ficus-little-fiddle.jpg",
+      "liked": false,
+      "id": "7"
+    },
+    {
+      "name": "Tabletop Norfolk Pine",
+      "size": "Medium",
+      "sun": "Direct",
+      "difficulty": "Little Effort",
+      "image": "/plantPics/tabletop-norfolk-pine.webp",
+      "liked": false,
+      "id": "8"
+    },
+    {
+      "name": "Monstera",
+      "size": "Large",
+      "sun": "Partial",
+      "difficulty": "Carefree",
+      "image": "/plantPics/monstera.webp",
+      "liked": false,
+      "id": "9"
+    },
+    {
+      "name": "Ficus Umbellata",
+      "size": "Medium",
+      "sun": "Partial",
+      "difficulty": "Little Effort",
+      "image": "/plantPics/ficus-umbellata.jpg",
+      "liked": false,
+      "id": "10"
+    }
+  ]
 }

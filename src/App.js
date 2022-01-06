@@ -17,7 +17,7 @@ function App() {
 
   const [plants, setPlants] = useState([])
   const [filteredPlants, setFilteredPlants] = useState(plants)
-  //const [likedPlants, setLikedPlants] = useState(plants)
+  
 
   const handelChange = e => {
     const selectedPlant = e.target.value
@@ -55,7 +55,7 @@ function App() {
             <NewPlantForm />
           </Route>
           <Route path="/plants/favorites">
-            <FavoritePlants />
+            <FavoritePlants plantsList= {plants}/>
           </Route>
           <Route path="/">
             <p> Home page!</p>
