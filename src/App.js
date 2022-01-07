@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react"
+import {useState, useEffect} from "react";
 import React from "react";
 import Navbar from "./Navbar";
 import PlantFilter from "./PlantFilter";
@@ -18,6 +18,19 @@ function App() {
   const [plants, setPlants] = useState([])
   const [filteredPlants, setFilteredPlants] = useState(plants)
   
+  const handleAddPlant = newPlant => {
+    setPlants(currentPlants => [...currentPlants, newPlant])
+    setFilteredPlants(currentPlants => [...currentPlants, newPlant])
+  }
+
+  const handleLike = likedPlant => {
+    const modifiedPlantId = plants.findIndex(plant => plant.id === likedPlant.id)
+    const newArray = [...plants]
+    newArray[modifiedPlantId] = likedPlant
+    setPlants(newArray)
+    setFilteredPlants(newArray)
+
+  }
 
   const handelChange = e => {
     const selectedPlant = e.target.value
@@ -27,12 +40,6 @@ function App() {
 
   
 
-  //for the form:
-  const handelSubmit = e => {
-    e.preventDefault()
-    // PUT?
-  }
-  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,15 +59,15 @@ function App() {
         <Navbar />
           <Switch>
           <Route path="/plants/new">
-            <NewPlantForm />
+            <NewPlantForm  handleAddPlant={handleAddPlant} />
           </Route>
           <Route path="/plants/favorites">
             <FavoritePlants plantsList= {plants}/>
           </Route>
           <Route path="/">
             <p> Home page!</p>
-            <PlantFilter  handelChange={handelChange}/>
-            <PlantContainer plantsList= {plants} filteredPlants={filteredPlants}/>
+            <PlantFilter handelChange={handelChange}/>
+            <PlantContainer plantsList= {plants} filteredPlants={filteredPlants} handleLike={handleLike}/>
           </Route>
           </Switch>
       </Router>

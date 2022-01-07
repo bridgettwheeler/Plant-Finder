@@ -1,11 +1,11 @@
 import PlantCard from "./PlantCard";
 //flexboxfroggy
 
-function PlantContainer({filteredPlants}) {
+function PlantContainer({filteredPlants, handleLike}) {
 
     return (
         <div>
-            {filteredPlants.map(plant => <PlantCard key={plant.id} plantObj={plant} />)}
+            {filteredPlants.map(plant => <PlantCard key={plant.id} plantObj={plant} handleLike={handleLike}/>)}
         </div>
         
     )
