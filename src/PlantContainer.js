@@ -1,14 +1,17 @@
 import PlantCard from "./PlantCard";
-//flexboxfroggy
+import {Container} from './StyledComponents';
 
 function PlantContainer({filteredPlants, handleLike}) {
-
+    const plantCards = filteredPlants.map(plant => <PlantCard key={plant.id} plantObj={plant} handleLike={handleLike} />)
     return (
-        <div>
-            {filteredPlants.map(plant => <PlantCard key={plant.id} plantObj={plant} handleLike={handleLike}/>)}
-        </div>
+        <Container> {plantCards} </Container>
         
     )
 }
+
+
+
+
+
 
 export default PlantContainer;
