@@ -1,8 +1,12 @@
 import {NavLink} from 'react-router-dom';
+import {Nav} from './StyledComponents';
 
 const style = {
-    width: "2em",
-    margin: ".5em"
+    display: 'flex',
+    justifyContent: 'center',
+    fontSize: '25px',
+    color: "#006A4E",
+    
 
 }
 
@@ -15,7 +19,7 @@ function Navbar() {
              to="/"
              activeStyle={{
                 fontweight: "bold",
-                color: "green"
+                color: "#8FBC8B"
             }}
             style={style}
             >
@@ -27,7 +31,7 @@ function Navbar() {
             to="/plants/new"
             activeStyle={{
                 fontweight: "bold",
-                color: "green"
+                color: "#8FBC8B"
             }}
             style={style}
             >
@@ -39,9 +43,9 @@ function Navbar() {
             to="/plants/favorites"
             activeStyle={{
                 fontweight: "bold",
-                color: "green"
+                color: "#8FBC8B"
             }}
-            style={style}
+            style={style} 
             >
             Favorites
             </NavLink>

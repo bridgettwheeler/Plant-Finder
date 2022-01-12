@@ -65,7 +65,7 @@ function App() {
             <FavoritePlants plantsList= {plants}/>
           </Route>
           <Route path="/">
-            <p> Home page!</p>
+            <p style={{color:'#006A4E', textAlign: 'center'}}>If you love house plants then you will this app! Browse all the house plants or filter by name. </p> <p style={{color:'#006A4E', textAlign: 'center'}}>Feeling that plant connection? Simply like all your favorite house plants and they will be saved to your Favorites page!</p> <p style={{color:'#006A4E', textAlign: 'center'}} >No plant left behind! If you have a plant that isn't in our database please add it by navigating to the Add New Plant form. Thank you for helping us keep our database growing!</p>
             <PlantFilter handelChange={handelChange}/>
             <PlantContainer plantsList= {plants} filteredPlants={filteredPlants} handleLike={handleLike}/>
           </Route>

@@ -15,4 +15,12 @@ const Card = styled.div`
     
 `
 
-export {Container, Card};
+const Nav = styled.div`
+    justify-content: center;
+    background-color: green;
+    font-color: white;
+    
+    
+`
+
+export {Container, Card, Nav};

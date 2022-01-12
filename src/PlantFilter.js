@@ -1,8 +1,8 @@
 function PlantFilter({handelChange}) {
     return(
-        <div>
-            <select onChange={handelChange}>
-                <option value="All">All Plants</option>
+        <div style={{textAlign: 'center'}}>
+            <select style ={{color: '#006A4E', fontSize: '15px'}} onChange={handelChange}>
+                <option  value="All">All Plants</option>
                 <option value="Money Tree">Money Tree</option>
                 <option value="Bromeliad Summer">Bromeliad Summer</option>
                 <option value="Prickly Pear Cactus">Prickly Pear Cactus</option>

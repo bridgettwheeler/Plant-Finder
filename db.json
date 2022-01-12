@@ -6,7 +6,7 @@
       "sun": "Low",
       "difficulty": "Carefree",
       "image": "/plantPics/money-tree.jpg",
-      "liked": true,
+      "liked": false,
       "id": 1
     },
     {
@@ -24,7 +24,7 @@
       "sun": "Low",
       "difficulty": "Carefree",
       "image": "/plantPics/prickly-pear-cactu.jpg",
-      "liked": true,
+      "liked": false,
       "id": 3
     },
     {
@@ -42,7 +42,7 @@
       "sun": "Partial",
       "difficulty": "Carefree",
       "image": "/plantPics/sansevieria.jpg",
-      "liked": true,
+      "liked": false,
       "id": 5
     },
     {
@@ -51,7 +51,7 @@
       "sun": "Direct",
       "difficulty": "Carefree ",
       "image": "/plantPics/bromeliad-pineapple.jpg",
-      "liked": true,
+      "liked": false,
       "id": 6
     },
     {
@@ -60,7 +60,7 @@
       "sun": "Partial",
       "difficulty": "Little Effort",
       "image": "/plantPics/ficus-little-fiddle.jpg",
-      "liked": true,
+      "liked": false,
       "id": 7
     },
     {
