@@ -7,8 +7,6 @@ function PlantCard({plantObj, handleLike}) {
     const [plant, setPlant] = useState(plantObj)
     const handleLikePlant = e => {
 
-        //e.target.innerText = (e.target.innerText === "♡") ? "♥" : "♡"
-
         fetch(`http://localhost:3000/house_plants/${plant.id}`, {
         method: 'PATCH',
         body: JSON.stringify({

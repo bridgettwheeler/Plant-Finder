@@ -15,7 +15,7 @@
       "sun": "Low",
       "difficulty": "Carefree ",
       "image": "/plantPics/bromeliad-summer.jpg",
-      "liked": false,
+      "liked": true,
       "id": 2
     },
     {
@@ -24,7 +24,7 @@
       "sun": "Low",
       "difficulty": "Carefree",
       "image": "/plantPics/prickly-pear-cactu.jpg",
-      "liked": false,
+      "liked": true,
       "id": 3
     },
     {
@@ -42,7 +42,7 @@
       "sun": "Partial",
       "difficulty": "Carefree",
       "image": "/plantPics/sansevieria.jpg",
-      "liked": false,
+      "liked": true,
       "id": 5
     },
     {
@@ -60,7 +60,7 @@
       "sun": "Partial",
       "difficulty": "Little Effort",
       "image": "/plantPics/ficus-little-fiddle.jpg",
-      "liked": false,
+      "liked": true,
       "id": 7
     },
     {

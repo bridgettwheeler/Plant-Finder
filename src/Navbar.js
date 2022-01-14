@@ -40,6 +40,18 @@ function Navbar() {
 
             <NavLink
             exact 
+            to="/plants/search"
+            activeStyle={{
+                fontweight: "bold",
+                color: "#8FBC8B"
+            }}
+            style={style}
+            >
+            Text Counter
+            </NavLink>
+
+            <NavLink
+            exact 
             to="/plants/favorites"
             activeStyle={{
                 fontweight: "bold",

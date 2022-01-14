@@ -6,10 +6,9 @@ import PlantContainer from "./PlantContainer";
 import NewPlantForm from "./NewPlantForm";
 import FavoritePlants from "./FavoritePlants";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SearchBar from "./SearchBar";
 
-
-// question - I feel like my handleLike should be in App but when I put it there is says it is undefined. I try to add it to the plant container component but it doesnt work?
-//bloomscape.com
+//blog: https://medium.com/@bridgettwheeler/how-to-add-your-likes-to-a-favorites-page-50cb1887161b
 
 const API = "http://localhost:3000/house_plants"
 
@@ -60,6 +59,9 @@ function App() {
           <Switch>
           <Route path="/plants/new">
             <NewPlantForm  handleAddPlant={handleAddPlant} />
+          </Route>
+          <Route path="/plants/search">
+            <SearchBar />
           </Route>
           <Route path="/plants/favorites">
             <FavoritePlants plantsList= {plants}/>
